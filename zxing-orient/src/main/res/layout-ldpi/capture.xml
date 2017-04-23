@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools">
+
+    <SurfaceView android:id="@+id/preview_view"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"/>
+
+    <com.google.zxing.client.android.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/custom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_bg"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="20dp">
+        <LinearLayout
+            android:id="@+id/options_tool_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:gravity="start"
+                android:src="@drawable/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/actionbar_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/autofocus_toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_center_focus_strong_white_18dp"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <ImageView
+                android:id="@+id/flash_toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flash_off_white_18dp"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:background="@color/actionbar_bg"
+                    android:id="@+id/info_box">
+        <TextView android:id="@+id/info"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="bottom|center_horizontal"
+                  android:text="@string/custom_status_msg"
+                  android:textColor="@color/status_text"
+                  android:textSize="12sp"
+                  android:textAllCaps="true"
+                  android:paddingBottom="20dp"
+                  android:paddingTop="20dp"/>
+    </RelativeLayout>
+
+</merge>
