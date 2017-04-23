@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">"ZXing Orient"</string>
+    <string name="app_name">"My Activity"</string>
     <string name="action_settings">Settings</string>
     <string name="info_string">Tap on a Button to Scan and see the Result here.</string>
     <string name="one_d_barcode">1D Barcodes</string>
@@ -27,7 +27,7 @@
     <string name="define_ActionBarSherlock"/>
     <string name="library_ActionBarSherlock_author">Sudar Abisheck</string>
     <string name="library_ActionBarSherlock_authorWebsite">http://www.sudar.me</string>
-    <string name="library_ActionBarSherlock_libraryName">Zxing Orient</string>
+    <string name="library_ActionBarSherlock_libraryName">My Activity</string>
     <string name="library_ActionBarSherlock_libraryDescription">An Android Library based on ZXing Library
         with support for `Portrait Orientation` and some cool stuffs.</string>
     <string name="library_ActionBarSherlock_libraryVersion">2.0.0</string>

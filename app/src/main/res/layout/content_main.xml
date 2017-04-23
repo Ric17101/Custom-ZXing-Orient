@@ -33,13 +33,6 @@
             android:paddingTop="20dp">
 
             <Button
-                android:id="@+id/button_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/default_code"/>
-
-            <Button
                 android:id="@+id/button_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,19 +46,6 @@
             android:orientation="horizontal"
             android:paddingTop="20dp">
 
-            <Button
-                android:id="@+id/button_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/one_d_barcode"/>
-
-            <Button
-                android:id="@+id/button_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/two_d_barcode"/>
         </LinearLayout>
 
 
@@ -104,23 +84,6 @@
                 android:layout_gravity="center"
                 android:text="@string/generate_qr"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="@string/for_more_info"
-            android:textAllCaps="true"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/github_link"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:text="@string/check_github"/>
-
-        </LinearLayout>
+    </LinearLayout>
 
 </ScrollView>
